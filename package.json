@@ -18,7 +18,7 @@
 		"flowbite": "^2.0.0",
 		"flowbite-svelte": "^0.44.18",
 		"postcss": "^8.4.31",
-		"svelte": "^4.2.2",
+		"svelte": "^4.2.8",
 		"svelte-loading-spinners": "^0.3.4",
 		"svelte-meta-tags": "^3.0.4",
 		"tailwindcss": "^3.3.5",
