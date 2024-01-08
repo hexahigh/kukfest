@@ -59,8 +59,8 @@ devDependencies:
     specifier: ^10.4.16
     version: 10.4.16(postcss@8.4.31)
   flowbite:
-    specifier: ^2.0.0
-    version: 2.0.0
+    specifier: ^2.2.1
+    version: 2.2.1
   flowbite-svelte:
     specifier: ^0.44.18
     version: 0.44.18(svelte@4.2.2)
@@ -2694,8 +2694,8 @@ packages:
       mini-svg-data-uri: 1.4.4
     dev: true
 
-  /flowbite@2.0.0:
-    resolution: {integrity: sha512-gP/iC/WuznQ5XBzikhaSs4RDs49zrvoAdHbWMHSY3l7nVJX0xJz+dELIlLjh+czLdEVTMLxUjuARYYwCb5q34A==}
+  /flowbite@2.2.1:
+    resolution: {integrity: sha512-iiZyBTtriEDRHrqXZgpKHaxl4B2J8HZUP8Yn1RXozUDKszWHDVj4GxQqMMB9AJHRWOgXV/4E/LJZ/zqQgBUhWA==}
     dependencies:
       '@popperjs/core': 2.11.8
       mini-svg-data-uri: 1.4.4
