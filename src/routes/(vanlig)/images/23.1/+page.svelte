@@ -3,19 +3,26 @@
   import ImagesNav from "$lib/components/images-nav.svelte";
 
   const pictureModules = import.meta.glob(
-    "$lib/img/image-archive/23.1/*.{avif,gif,heif,jpeg,jpg,png,tiff,webp}", { eager: true }
+    "$lib/img/image-archive/23.1/*.{avif,gif,heif,jpeg,jpg,png,tiff,webp}",
+    {
+      eager: true,
+      query: {
+        enhanced: true,
+      },
+    }
   );
-  
-  const pictures = Object.values(pictureModules).map(module => module.default);
+
+  const pictures = Object.values(pictureModules).map(
+    (module) => module.default
+  );
 
   // Distribute the images as evenly as possible into 4 columns
   let columns = [[], [], [], []];
   for (let i = 0; i < pictures.length; i++) {
     columns[i % columns.length].push(pictures[i]);
   }
-  console.log(columns)
+  console.log(columns);
 </script>
-
 
 <ImagesNav />
 
@@ -24,9 +31,9 @@
     {#each columns as column, columnIndex}
       <div class="column">
         {#each column as image, index}
-          <img
+          <enhanced:img
             class="image-item rounded"
-            src={`${image}`}
+            src={image}
             alt="High Resolution Image"
           />
         {/each}

@@ -3,10 +3,10 @@
   import Nav from "$lib/components/nav2.svelte";
 </script>
 
-<Nav />
-
-<main>
+<main class="dark:bg-ctp-base dark:text-white">
+  <Nav />
+  
   <slot />
-</main>
 
-<Footer />
+  <Footer />
+</main>
