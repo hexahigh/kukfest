@@ -47,7 +47,7 @@
 		"@tsparticles/svelte": "^3.0.0",
 		"audiomotion-analyzer": "^4.4.0",
 		"chart.js": "^4.4.2",
-		"flowbite-svelte-icons": "^1.4.5",
+		"flowbite-svelte-icons": "^1.5.0",
 		"gun": "^0.2020.1239",
 		"kolorist": "^1.8.0",
 		"lorem-ipsum": "^2.0.8",
