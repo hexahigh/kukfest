@@ -46,7 +46,7 @@ dependencies:
     version: 4.4.2
   flowbite-svelte-icons:
     specifier: ^1.4.5
-    version: 1.4.5(svelte@4.2.9)(tailwind-merge@2.2.1)(tailwindcss@3.4.1)
+    version: 1.4.5(svelte@4.2.9)(tailwind-merge@2.2.1)(tailwindcss@3.4.3)
   gun:
     specifier: ^0.2020.1239
     version: 0.2020.1239
@@ -78,7 +78,7 @@ dependencies:
 devDependencies:
   '@catppuccin/tailwindcss':
     specifier: ^0.1.6
-    version: 0.1.6(tailwindcss@3.4.1)
+    version: 0.1.6(tailwindcss@3.4.3)
   '@sveltejs/adapter-auto':
     specifier: ^3.0.0
     version: 3.1.1(@sveltejs/kit@2.5.4)
@@ -108,7 +108,7 @@ devDependencies:
     version: 0.44.24(svelte@4.2.9)
   flowbite-typography:
     specifier: ^1.0.3
-    version: 1.0.3(tailwindcss@3.4.1)
+    version: 1.0.3(tailwindcss@3.4.3)
   postcss:
     specifier: ^8.4.38
     version: 8.4.38
@@ -119,8 +119,8 @@ devDependencies:
     specifier: ^3.1.0
     version: 3.1.0(svelte@4.2.9)(typescript@5.2.2)
   tailwindcss:
-    specifier: ^3.4.1
-    version: 3.4.1
+    specifier: ^3.4.3
+    version: 3.4.3
   vite:
     specifier: ^5.0.0
     version: 5.2.2
@@ -1329,12 +1329,12 @@ packages:
     resolution: {integrity: sha512-BxOqI5LgsIQP1odU5KMwV9yoijleOPzHL18/YvNqF9KFSGF2K/DLlYAbDQsWqd/1nbaFuSkYD/191dpMtNh4vw==}
     dev: true
 
-  /@catppuccin/tailwindcss@0.1.6(tailwindcss@3.4.1):
+  /@catppuccin/tailwindcss@0.1.6(tailwindcss@3.4.3):
     resolution: {integrity: sha512-V+Y0AwZ5SSyvOVAcDl7Ng30xy+m82OKnEJ+9+kcZZ7lRyXuZrAb2GScdq9XR3v+ggt8qiZ/G4TvaC9cJ88AAXA==}
     peerDependencies:
       tailwindcss: '>=3.0.0'
     dependencies:
-      tailwindcss: 3.4.1
+      tailwindcss: 3.4.3
     dev: true
 
   /@cloudflare/kv-asset-handler@0.3.1:
@@ -3881,7 +3881,7 @@ packages:
     dependencies:
       to-regex-range: 5.0.1
 
-  /flowbite-svelte-icons@1.4.5(svelte@4.2.9)(tailwind-merge@2.2.1)(tailwindcss@3.4.1):
+  /flowbite-svelte-icons@1.4.5(svelte@4.2.9)(tailwind-merge@2.2.1)(tailwindcss@3.4.3):
     resolution: {integrity: sha512-NLXcRTvp84NYbrb+csqYvKfOt2dfFjS8KvFebUEz4EhP6IBEe2mSNbl+faCZ2EIJOMmfRtyhk1Rx2wwsAIx/1Q==}
     peerDependencies:
       svelte: ^3.54.0 || ^4.0.0 || ^5.0.0
@@ -3890,7 +3890,7 @@ packages:
     dependencies:
       svelte: 4.2.9
       tailwind-merge: 2.2.1
-      tailwindcss: 3.4.1
+      tailwindcss: 3.4.3
     dev: false
 
   /flowbite-svelte@0.44.24(svelte@4.2.9):
@@ -3906,7 +3906,7 @@ packages:
       tailwind-merge: 2.2.1
     dev: true
 
-  /flowbite-typography@1.0.3(tailwindcss@3.4.1):
+  /flowbite-typography@1.0.3(tailwindcss@3.4.3):
     resolution: {integrity: sha512-UbdQFIIOb7xx2TS+QQrqr79B6ZSkSZurxYWzV0npth6Wns3/j7KfeDJoH9QFU+Zs7zjrvejNtyzgzWLWyCrdiA==}
     peerDependencies:
       tailwindcss: '>=3.0.0 || insiders'
@@ -3914,7 +3914,7 @@ packages:
       lodash.castarray: 4.4.0
       lodash.isplainobject: 4.0.6
       lodash.merge: 4.6.2
-      tailwindcss: 3.4.1
+      tailwindcss: 3.4.3
     dev: true
 
   /flowbite@2.2.1:
@@ -4371,6 +4371,11 @@ packages:
 
   /jiti@1.20.0:
     resolution: {integrity: sha512-3TV69ZbrvV6U5DfQimop50jE9Dl6J8O1ja1dvBbMba/sZ3YBEQqJ2VZRoQPVnhlzjNtU1vaXRZVrVjU4qtm8yA==}
+    hasBin: true
+    dev: true
+
+  /jiti@1.21.0:
+    resolution: {integrity: sha512-gFqAIbuKyyso/3G2qhiO2OM6shY6EPP/R0+mkDbyspxKazh8BXDC5FiFsUjlczgdNz/vfra0da2y+aHrusLG/Q==}
     hasBin: true
 
   /js-tokens@4.0.0:
@@ -5459,8 +5464,8 @@ packages:
     dependencies:
       '@babel/runtime': 7.23.9
 
-  /tailwindcss@3.4.1:
-    resolution: {integrity: sha512-qAYmXRfk3ENzuPBakNK0SRrUDipP8NQnEY6772uDhflcQz5EhRdD7JNZxyrFHVQNCwULPBn6FNPp9brpO7ctcA==}
+  /tailwindcss@3.4.3:
+    resolution: {integrity: sha512-U7sxQk/n397Bmx4JHbJx/iSOOv5G+II3f1kpLpY2QeUv5DcPdcTsYLlusZfq1NthHS1c1cZoyFmmkex1rzke0A==}
     engines: {node: '>=14.0.0'}
     hasBin: true
     dependencies:
@@ -5472,7 +5477,7 @@ packages:
       fast-glob: 3.3.2
       glob-parent: 6.0.2
       is-glob: 4.0.3
-      jiti: 1.20.0
+      jiti: 1.21.0
       lilconfig: 2.1.0
       micromatch: 4.0.5
       normalize-path: 3.0.0
@@ -6206,6 +6211,7 @@ packages:
 
   /workbox-google-analytics@7.0.0:
     resolution: {integrity: sha512-MEYM1JTn/qiC3DbpvP2BVhyIH+dV/5BjHk756u9VbwuAhu0QHyKscTnisQuz21lfRpOwiS9z4XdqeVAKol0bzg==}
+    deprecated: It is not compatible with newer versions of GA starting with v4, as long as you are using GAv3 it should be ok, but the package is not longer being maintained
     dependencies:
       workbox-background-sync: 7.0.0
       workbox-core: 7.0.0
