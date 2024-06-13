@@ -15,9 +15,7 @@ const config = {
   plugins: [
     sveltekit(),
     SvelteKitPWA({
-      strategies: "injectManifest",
-      srcDir: "src",
-      filename: "service-worker.js",
+      strategies: "generateSW",
       manifestFilename: "manifest.json",
       manifest: {
         name: "Blålange festivalen",
@@ -58,11 +56,30 @@ const config = {
         dir: "auto",
         categories: ["news", "social", "events"],
       },
-      // Don't precache images
-      injectManifest: {
-        globIgnores: [
-          "**/img/**/*",
-          "**/_app/immutable/assets/**/*.webp",
+      workbox: {
+        maximumFileSizeToCacheInBytes: 500 * 1024 * 1024,
+        runtimeCaching: [
+          {
+            urlPattern:
+              /^https:\/\/db\.080609\.xyz\/api\/collections\/art_articles\/.*/i,
+            handler: "CacheFirst",
+            options: {
+              backgroundSync: {
+                name: "article_cache",
+                options: {
+                  maxRetentionTime: 60 * 60 * 0.25, // <== 15 minutes
+                },
+              },
+              cacheName: "article_cache",
+              expiration: {
+                maxEntries: 20,
+                maxAgeSeconds: 60 * 60 * 1, // <== 1 hour
+              },
+              cacheableResponse: {
+                statuses: [0, 200],
+              },
+            },
+          },
         ],
       },
     }),
